@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin settings hub",
+    "description": "Collects every plugin's settings page inside Settings → Built-in plugins: the Plugin settings tab lists them as cards, so opening a plugin goes straight to its settings page while the separate plugin entries stay out of the settings navigation. Each plugin still owns the content of its page; this bundle only groups the entries."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "dsh-plugin-settings-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "把各插件的设置页集中到设置 → 内置插件里：新增「插件设置」标签页列出插件卡片，点插件直接打开它的设置页，并从设置导航中隐藏这些插件的独立入口。 Collects the settings pages contributed by installed plugins into the built-in Plugins settings page and hides their separate settings-navigation entries.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peter9130/dsh-plugin-settings-hub.git"
+  },
+  "homepage": "https://github.com/peter9130/dsh-plugin-settings-hub#readme",
+  "bugs": {
+    "url": "https://github.com/peter9130/dsh-plugin-settings-hub/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "bundle",
+    "settings",
+    "web-ui"
+  ]
+}

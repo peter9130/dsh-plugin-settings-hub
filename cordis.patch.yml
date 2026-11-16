@@ -1,0 +1,9 @@
+# Plugin settings hub bundle patch.
+#
+# One Host row carries the bundle (and its diagnostic sink for the browser
+# half). The browser half itself is discovered from package.json `dsh.client`;
+# it registers the hub tab in the Plugins settings page and the back action in
+# the settings header.
+- insert:
+    - id: plugin-settings-hub
+      name: 'dsh-plugin-settings-hub'
