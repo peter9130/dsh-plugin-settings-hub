@@ -1,7 +1,6 @@
 {
   "name": "dsh-plugin-settings-hub",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
   "type": "module",
   "description": "把各插件的设置页集中到设置 → 内置插件里：新增「插件设置」标签页列出插件卡片，点插件直接打开它的设置页，并从设置导航中隐藏这些插件的独立入口。 Collects the settings pages contributed by installed plugins into the built-in Plugins settings page and hides their separate settings-navigation entries.",
   "exports": {
@@ -47,5 +46,8 @@
     "bundle",
     "settings",
     "web-ui"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
