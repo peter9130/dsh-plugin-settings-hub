@@ -24,7 +24,7 @@
  * tokens and the plugin imports no Harness Client package.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-plugin-settings-hub',
+  id: 'dsh-plugin-settings-hub',
   factory(require) {
     const React = require('react')
     const h = React.createElement
